@@ -1,0 +1,65 @@
+.alert-container {
+  height: 55px;
+  font: 'Geist regular', sans-serif;
+  font-size: 16px;
+  border-radius: 12px;
+  background-color: #282A42;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+}
+
+.alert-circle {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.circle-green {
+  background-color: #00ED91;
+}
+
+.circle-red {
+  background-color: #D55F8A;
+}
+
+.circle-blue {
+  background-color: #4F7FFF;
+}
+
+.alert-btn {
+  background: none;
+  border: none;
+  width: 16px;
+  height: 15.994px;
+  cursor: pointer;
+}
+
+.alert-success {
+  background: linear-gradient(270deg, #282A42 60.42%, #215A53 100%);
+}
+
+.alert-error {
+  background: linear-gradient(270deg, #282A42 60.42%, #683246 100%);
+}
+
+.alert-info {
+  background: linear-gradient(270deg, #282A42 60.42%, #1D2A63 100%);
+}
+
+.alerts-container {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}

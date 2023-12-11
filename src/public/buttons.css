@@ -1,0 +1,30 @@
+.btn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--main-degree);
+  font-family: 'Geist semibold', sans-serif;
+}
+
+.btn-secondary {
+  border: 1px solid var(--light-purple);
+  opacity: 0.8;
+  font-family: 'Geist light', sans-serif;
+}
+
+.btn-danger {
+  background-color: var(--red);
+}
+
+.btn-info {
+  background-color: var(--purple);
+}

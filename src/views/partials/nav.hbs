@@ -1,0 +1,19 @@
+<nav class="nav">
+  <a href="/"><img src="/img/logo.svg" alt="TecMentor logo"></a>
+  <div class="menu">
+    {{#if user}}
+      <a href="/mentorings">Busca tutorías</a>
+      <a href="/mentorings/add">Anunciar tutorías</a>
+      <div class="menu-user">
+        <img src="/img/no-avatar.svg" class="mentoring-avatar" alt="">
+        <p>Hola, {{user.name}}</p>
+      </div>
+      <a href="/users/logout">Cerrar sesión</a>
+    {{else}}
+    <a href="#">Conviértete en mentor</a>
+    <a href="#">Encuentra a un mentor</a>
+    <a class="btn btn-secondary" href="/users/login">Inicia sesión</a>
+    <a class="btn btn-primary" href="/users/register">Regístrate</a>
+    {{/if}}
+  </div>
+</nav>

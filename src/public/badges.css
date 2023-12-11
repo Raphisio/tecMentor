@@ -1,0 +1,11 @@
+.badge {
+  font-size: 12px;
+  border-radius: 11px;
+  padding: 13px 16px;
+  text-transform: uppercase;
+}
+
+.badge-default {
+  border: 1px solid #484A6A;
+  background: #303145;
+}

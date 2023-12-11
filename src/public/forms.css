@@ -1,0 +1,47 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.form-label {
+  color: var(--text-color);
+}
+
+.form-input {
+  border-radius: 14px;
+  border: 1px solid #2C2C31;
+  background: rgba(31, 31, 33, 0.30);
+  padding: 15px 22px;
+  color: white;
+  outline: none;
+}
+
+.form-input:focus {
+  border: 1px solid var(--purple);
+}
+
+.form-input:hover {
+  border: 1px solid #7077fd6d;
+}
+
+textarea {
+  resize: vertical;
+  font-family: 'Geist regular', sans-serif;
+  font-size: 14px;
+}
+
+select {
+  color: var(--text-color);
+}
+
+select option {
+  background-color: red;
+  color: black;
+}

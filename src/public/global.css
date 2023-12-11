@@ -1,0 +1,161 @@
+@import url('fonts.css');
+@import url('buttons.css');
+@import url('forms.css');
+@import url('badges.css');
+@import url('alerts.css');
+
+:root {
+  --text-color: #E9EAFF;
+  --main-degree: linear-gradient(45deg, rgba(185,112,253,1) 0%, rgba(112,118,253,1) 100%);
+  --light-purple: #B670FD;
+  --purple: #7076FD;
+  --red: #EB5757;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(50% 50% at 50% 50%, #1C1D42 0%, #1A1A1E 100%) no-repeat;
+  min-height: 100vh;
+  color: var(--text-color);
+  font-family: 'Geist regular', sans-serif;
+  width: 100%;
+  position: relative;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  min-width: 1230px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: 'Geist light', sans-serif;
+}
+
+.nav .menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero {
+  width: 1230px;
+  height: 452px;
+  background-image: url(./img/hero.png);
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding-top: 95px;
+  padding-right: 95px;
+}
+
+.hero h1 {
+  font-family: 'Geist bold',sans-serif;
+  font-size: 40px;
+}
+.hero h2 {
+  font-family: 'Geist medium', sans-serif;
+  font-size: 32px;
+}
+
+.hero h2 > span {
+  color: var(--light-purple);
+}
+
+.card-container {
+  border-radius: 14px;
+  border: 1px solid #2C2C31;
+  background: rgba(31, 31, 33, 0.30);
+  display: flex;
+  padding: 28px;
+  flex-direction: column;
+  min-width: 400px;
+  margin-bottom: 35px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 50px;
+  font-family: 'Geist semibold', sans-serif;
+}
+
+.mentoring-container {
+  width: 750px;
+}
+
+.mentoring-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mentoring-user {
+  display: flex;
+  flex-direction: row;
+}
+
+.mentoring-avatar {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.mentoring-title {
+  font-size: 20px;
+  font-family: 'Geist regular', sans-serif;
+}
+
+.mentoring-content {
+  padding: 23px;
+}
+
+.mentoring-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-container {
+  max-width: 1230px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-img {
+    width: 50%;
+    border-radius: 12px;
+}
+
+.section-title {
+  font-family: 'Geist bold', sans-serif;
+  font-size: 32px;
+}

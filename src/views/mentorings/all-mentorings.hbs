@@ -1,0 +1,63 @@
+<div class="card-container">
+  <h1 class="card-title">Tus mentorías</h1>
+  {{#each userMentorings}}
+    <div class="card-container mentoring-container">
+      <div class="mentoring-heading">
+        <div class="mentoring-user">
+          <img src="/img/no-avatar.svg" alt="avatar" class="mentoring-avatar">
+          <div>
+            <h2 class="mentoring-title">{{mentoringTopic}}</h2>
+            <span>{{mentoringUser.name}}</span>
+          </div>
+        </div>
+        <div class="badge badge-default">{{mentoringClass}}</div>
+      </div>
+      <div class="mentoring-content">
+        <p>Horarios disponibles:</p>
+        <p>{{mentoringAvailability}}</p>
+        <p>{{mentoringDescription}}</p>
+      </div>
+
+      <div class="mentoring-options">
+          <a href="/mentorings/edit/{{_id}}" class="btn btn-info">Editar mentoría</a>
+          <form action="/mentorings/delete/{{_id}}?_method=DELETE" method="POST">
+            <input type="hidden" name="_method" value="DELETE">
+            <button type="submit" class="btn btn-danger">Eliminar mentoría</button>
+          </form>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+<div class="card-container">
+  <h1 class="card-title">Todas las mentorías</h1>
+  {{#each allMentorings}}
+      <div class="card-container mentoring-container">
+        <div class="mentoring-heading">
+          <div class="mentoring-user">
+            <img src="/img/no-avatar.svg" alt="avatar" class="mentoring-avatar">
+            <div>
+              <h2 class="mentoring-title">{{mentoringTopic}}</h2>
+              <span>{{mentoringUser.name}}</span>
+            </div>
+          </div>
+          <div class="badge badge-default">{{mentoringClass}}</div>
+        </div>
+        <div class="mentoring-content">
+          <p>Horarios disponibles:</p>
+          <p>{{mentoringAvailability}}</p>
+          <p>{{mentoringDescription}}</p>
+        </div>
+
+        <div class="mentoring-options">
+          {{#if isOwner.[@index]}}
+            <a href="/mentorings/edit/{{_id}}" class="btn btn-info">Editar mentoría</a>
+            <form action="/mentorings/delete/{{_id}}?_method=DELETE" method="POST">
+              <input type="hidden" name="_method" value="DELETE">
+              <button type="submit" class="btn btn-danger">Eliminar mentoría</button>
+            </form>
+          {{/if}}
+        </div>
+      </div>
+  {{/each}}
+</div>

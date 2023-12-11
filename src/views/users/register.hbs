@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+</head>
+<body>
+  <div class="card-container">
+    <h1 class="card-title">Regístrate</h1>
+    <form action="/users/register" method="POST">
+      <div class="form-group">
+        <label for="profile_photo" class="form-label">Foto de perfil</label>
+        <input type="file" name="profile_photo" id="" value="{{profile_photo}}">
+      </div>
+      <div class="form-group">
+        <label for="name" class="form-label">Nombre</label>
+        <input type="text" name="name" class="form-input" placeholder="Ejemplo: John" value="{{name}}">
+      </div>
+      <div class="form-group">
+        <label for="last_name" class="form-label">Apellido</label>
+        <input type="text" name="last_name" class="form-input" placeholder="Ejemplo: Doe" value="{{last_name}}">
+      </div>
+      <div class="form-group">
+        <label for="control_number" class="form-label">Número de control</label>
+        <input type="text" name="control_number" class="form-input" placeholder="Ejemplo: 207010203" value="{{control_number}}">
+      </div>
+      <div class="form-group">
+        <label for="phone" class="form-label">Celular</label>
+        <input type="text" name="phone" class="form-input" placeholder="Ejemplo: 2281010203" value="{{phone}}">
+      </div>
+      <div class="form-group">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" name="email" class="form-input" placeholder="Ejemplo: ejemplo@correo.com" value="{{email}}">
+      </div>
+      <div class="form-group">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" name="password" class="form-input" placeholder="contraseña">
+      </div>
+      <div class="form-group">
+        <label for="confirm_password" class="form-label">Confirmar contraseña</label>
+        <input type="password" name="confirm_password" class="form-input" placeholder="contraseña">
+      </div>
+
+      
+      <button class="btn btn-primary">Regístrate ahora</button>
+    </form>
+  </div>
+  
+</body>
+</html>

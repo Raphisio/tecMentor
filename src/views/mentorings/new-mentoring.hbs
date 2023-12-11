@@ -1,0 +1,34 @@
+<div class="card-container">
+  <h1 class="card-title">Agrega una nueva mentoría</h1>
+  <form action="/mentorings/new-mentoring" method="POST">
+    <div class="form-group">
+      <label for="mentoringClass" class="form-label">Carrera</label>
+      <input type="text" name="mentoringClass" class="form-input" placeholder="Ejemplo: Cálculo diferencial">
+    </div>
+    <div class="form-group">
+      <label for="mentoringTopic" class="form-label">Tema</label>
+      <input type="text" name="mentoringTopic" class="form-input" placeholder="Ejemplo: variables indefinidas">
+    </div>
+    <div class="form-group">
+      <label for="mentoringAvailability" class="form-label">Horario disponible</label>
+      <input type="text" name="mentoringAvailability" class="form-input" placeholder="Ejemplo: Todos los lunes por la tarde">
+    </div>
+    <div class="form-group">
+      <label for="mentoringDescription" class="form-label">Descripción</label>
+      <textarea name="mentoringDescription" class="form-input" placeholder="Ejemplo: En esta mentoría nos enfocaremos en..."></textarea>
+    </div>
+    
+    <button class="btn btn-primary">Agregar mentoría</button>
+  </form>
+
+    <div class="form-group">
+    <label for="form-label">Carrera</label>
+    <select name="career-list" id="" class="form-input">
+      <option value="">Ingeniería en sistemas computacionales</option>
+      <option value="">Administración de empresas</option>
+      <option value="">Gastronomía</option>
+      <option value="">Ingeniería civil</option>
+      <option value=""></option>
+    </select>
+  </div>
+</div>
